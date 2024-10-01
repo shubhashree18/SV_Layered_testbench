@@ -1,9 +1,9 @@
 // D Flip-Flop Design Module 
 module DFF (
-input logic clk,
-input logic reset, 
-input logic d, 
-output logic q
+  input logic clk,
+  input logic reset, 
+  input logic d, 
+  output logic q
 );
 always_ff @(posedge clk or posedge reset)
   if (reset)
