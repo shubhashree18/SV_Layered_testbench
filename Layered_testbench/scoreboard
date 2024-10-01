@@ -1,0 +1,36 @@
+class scoreboard;
+  
+  mailbox mon2scb;
+  
+  function new (mailbox mon2scb); 
+    this.mon2scb = mon2scb;
+  endfunction
+
+  task main;
+    transaction trans;
+    repeat (1)
+      begin
+      mon2scb.get(trans);
+
+//code for reference module
+      if (trans.clk ==1 && trans.reset ==1) 
+      begin
+
+        if (trans.reset)
+          begin
+            if (trans.q == 1'b0)
+              $display("Result is as Expected");
+          end
+
+        else if (!trans.reset)
+          begin
+            if (trans.q= trans.d)
+              $display("result is as expected");
+          end
+        else
+          $error ("Wrong Result");
+      end
+    trans.display("Scoreboard");
+  end
+  endtask
+endclass
