@@ -74,14 +74,27 @@ Inside the test block, there is an environment block that encapsulates the gener
 * so to communicate between them, we use virtual interface
 
 </details><details>
-  <summary>Output of D Flipflop</summary>
+  <summary>D Flipflop</summary>
+
+  Truth table of D flipfop
+
+  ![Screenshot (55)](https://github.com/user-attachments/assets/c3e0ac6b-6fd2-4666-8ef8-7a83a4652ba8)
+
+  ##### output when clk = 1; reset = 0; d= 1
   
   ![Screenshot (4)](https://github.com/user-attachments/assets/811c0c55-d740-4583-970b-fa8ed31bc97c)
 
+   ##### output when clk = 0; reset = 1; d= 1
+   
   ![Screenshot (5)](https://github.com/user-attachments/assets/489c8904-b3f3-428a-aee6-975414f2333e)
 
 </details><details>
-  <summary>Output of half adder</summary>
+  <summary>half adder</summary>
   
+  ##### truth table of half adder
+
+  ![Screenshot (56)](https://github.com/user-attachments/assets/b0f6a187-ea75-4cb9-808e-80db6c292640)
+
+##### output when a=0 and b=1    
   ![Screenshot (49)](https://github.com/user-attachments/assets/c5f43805-bac6-4056-bc67-3bca7b2bd033)
 
